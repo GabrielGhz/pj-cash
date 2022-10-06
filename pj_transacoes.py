@@ -1,4 +1,4 @@
-from cliente import cadastramento
+import cliente
 import random
 
 # import cliente
@@ -17,4 +17,4 @@ while True:
         break
     if p == 1:
         print("Preencha as informações abaixo: ")
-        cadastramento()
+        cliente.cadastramento()

@@ -52,4 +52,3 @@ def cadastramento():
 
     print("cadastrado com sucesso!")
     print("seu numero de cliente é: {}".format(x))
-cadastramento()
