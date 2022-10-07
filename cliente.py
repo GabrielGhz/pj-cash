@@ -8,7 +8,8 @@ def cadastramento():
         'cpf':"",
         'dn':"",
         'end':"",
-        'mn':""
+        'mn':"",
+        'tel':""
     }
     x = (random.randrange(0,9999999))
     while True:
@@ -39,16 +40,26 @@ def cadastramento():
         else:
             print("Por favor, digite somente LETRAS")
             continue
+    while True:
+        tel = input("Digite o numero do seu telefone celular: ")
+        if str.isdigit (tel) == True:
+            break
+        else:
+            print("Por favor, digite somente NÚMEROS")
+            continue
     dn = input("Digite sua Data de nascimento: ")
     cpf = int(cpf)
     rg = int(rg)
+    tel = int(tel)
     mn = x
     cadastro['nm'] = nm
     cadastro['cpf'] = cpf
     cadastro['rg'] = rg
     cadastro['dn'] = dn
     cadastro['end'] = end
+    cadastro['tel'] = tel
     cadastro["mn"] = mn
-
-    print("cadastrado com sucesso!")
-    print("seu numero de cliente é: {}".format(x))
+    print("")
+    print("cadastrado com sucesso! \n")
+    print("seu numero de cliente é: {} \n".format(x))
+cadastramento()
